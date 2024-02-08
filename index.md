@@ -3,19 +3,12 @@ layout: about
 permalink: /
 profile:
   align: right
-  image: profile.png
+  image: profile.jpeg
 published: true
 ---
 
-[Gradfolio](https://github.com/jitinnair1/gradfolio){:target="_blank"} is a responsive, dark-mode ready Jekyll theme designed keeping academia in mind. The easiest way to install the theme is to fork it using GitHub. Check the README file for [instructions](https://github.com/jitinnair1/gradfolio#installation){:target="_blank"}.
+My name is Ethan Witwer. I'm currently working as a research assistant at Linköping University, Sweden. You can find my staff page [here](https://liu.se/en/employee/ethwi03){:target="_blank"}.
 
-If you want to use this space to write your biography here, edit the `index.md` file. You can put a picture in, too. Rename your picture to `profile.png` and put it in the `assets/images/` folder.
+I’m primarily interested in computer security and privacy, especially in Internet communications. My current research focuses on developing defenses against traffic analysis.
 
-The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
-
-PS: If you liked the theme, do star it on GitHub!
-
-### Also, check out:
-
-- [autoCV](https://github.com/jitinnair1/autocv) - a LaTeX template that builds and deploys the CV using GitHub Actions, so you will always have a ready link for your latest CV
-- [Tail](https://github.com/jitinnair1/tail) - a minimal, quick-setup template for a blog
+See the links above if you're looking to learn a bit more about the work I've done so far. My contact information also appears at the bottom of every page on this website - feel free to get in touch. If you'd like, you can use [this](/assets/misc/publickey.asc){:target="_blank"} PGP key.
