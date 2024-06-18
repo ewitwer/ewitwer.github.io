@@ -4,6 +4,10 @@ permalink: /publications
 title: Publications
 ---
 
+### 2024 ###
+
+David Hasselquist, Ethan Witwer, August Carlson, Niklas Johansson, Niklas Carlsson. [Raising the Bar: Improved Fingerprinting Attacks and Defenses for Video Streaming Traffic](/assets/docs/pets2024.pdf){:target="_blank"}. In *Proceedings on Privacy Enhancing Technologies (PoPETS '24)*, volume 4.
+
 ### 2023 ###
 
 Tobias Pulls, Ethan Witwer. [Maybenot: A Framework for Traffic Analysis Defenses](/assets/docs/3603216.3624953.pdf){:target="_blank"}. In *Proceedings of the 22nd Workshop on Privacy in the Electronic Society (WPES '23)*.
