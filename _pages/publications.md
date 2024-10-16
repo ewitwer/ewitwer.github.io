@@ -6,6 +6,8 @@ title: Publications
 
 ### 2024 ###
 
+August Carlson, David Hasselquist, Ethan Witwer, Niklas Johansson, Niklas Carlsson. [Understanding and Improving Video Fingerprinting Attack Accuracy under Challenging Conditions](/assets/docs/3689943.3695045.pdf){:target="_blank"}. In *Proceedings of the 23rd Workshop on Privacy in the Electronic Society (WPES '24)*.
+
 David Hasselquist, Ethan Witwer, August Carlson, Niklas Johansson, Niklas Carlsson. [Raising the Bar: Improved Fingerprinting Attacks and Defenses for Video Streaming Traffic](/assets/docs/pets2024.pdf){:target="_blank"}. In *Proceedings on Privacy Enhancing Technologies (PoPETS '24)*, volume 4.
 
 ### 2023 ###
