@@ -1,0 +1,35 @@
+<!-- Source: https://www.yunseo.kim/posts/how-to-support-multi-language-on-jekyll-blog-with-polyglot-1/ -->
+
+<link rel="stylesheet" href="{{ '/assets/css/select-lang.css' | relative_url }}">
+
+<i class="fa-solid fa-sharp fa-language fa-lg"></i>
+
+<div class="lang-dropdown">
+  <select class="lang-select" onchange="changeLang(this.value)" aria-label="Select Language">
+    {%- for lang in site.languages -%}
+      <option
+        value="{% if lang == site.default_lang %}{{ page.url }}{% else %}/{{ lang }}{{ page.url }}{% endif %}"
+        {% if lang == site.active_lang %}
+          selected
+        {% endif %}
+      >
+        {% case lang %}
+          {% when 'en' -%}
+            English
+          {% when 'es' -%}
+            Español
+          {% when 'sv' -%}
+            Svenska
+          {% else -%}
+            {{- lang }}
+        {% endcase %}
+      </option>
+    {%- endfor -%}
+  </select>
+</div>
+
+<script>
+  function changeLang(url) {
+    window.location.href = url;
+  }
+</script>

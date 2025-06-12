@@ -1,0 +1,100 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: Inlägg
+  category: Kategori
+  tag: Etikett
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: Hem
+  about: Om mig
+  publications: Forskning
+  categories: Kategorier
+  tags: Etiketter
+
+# Categories and tags
+labels:
+  research: forskning
+  publications: Publikationer
+  categories: Kategorier
+  lang-en: lang-en
+  lang-es: lang-es
+  lang-sv: lang-sv
+
+# the text displayed in the search bar & search results
+search:
+  hint: sök
+  cancel: Avbryt
+  no_results: Hittade inga sökträffar.
+
+panel:
+  lastmod: Senast uppdaterad
+  #trending_tags: Trending Tags
+  toc: Innehåll
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: Det här inlägget är publicerat under licensen :LICENSE_NAME av författaren.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: Vissa rättigheter är reserverade.
+  verbose: >-
+    Om inte annat anges är innehållet på denna webbplats licensierat
+     under Creative Commons Attribution 4.0 International (CC BY 4.0) av författaren.
+
+meta: ""
+
+not_found:
+  statement: Den webbsida du söker finns inte på denna webbplats. Det verkar som att du letar efter någonting som inte är här, om inte jag har publicerat en vilseledande obrukbar länk!
+
+notification:
+  update_found: Det finns en ny version av innehållet.
+  update: Uppdatera sidan
+
+# ----- Posts related labels -----
+
+post:
+  written_by: Av
+  posted: Publicerad
+  updated: Uppdaterad
+  words: ord
+  pageview_measure: visningar
+  read_time:
+    unit: min
+    prompt: " läsning"
+  #relate_posts: Vidare läsning
+  share: Dela
+  button:
+    #next: Nyare
+    #previous: Äldre
+    copy_code:
+      succeed: Kopierat!
+    share_link:
+      title: Kopiera länk
+      succeed: Länken har kopierats!
+
+# Date time format.
+# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
+df:
+  post:
+    strftime: "%b %e, %Y"
+    dayjs: "ll"
+  archives:
+    strftime: "%b"
+    dayjs: "MMM"
+
+# categories page
+categories:
+  category_measure:
+    singular: kategori
+    plural: kategorier
+  post_measure:
+    singular: inlägg
+    plural: inlägg

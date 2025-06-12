@@ -1,0 +1,16 @@
+---
+title: "State Machine Frameworks for Website Fingerprinting Defenses: Maybe Not"
+description: "Kandidatuppsats, University of Minnesota–Twin Cities"
+date: 2023-08-11 05:09:15 +0200
+categories: [publications]
+tags: [research, lang-en]
+lang: sv
+---
+
+**Bakgrund:** Identifiering av webbplatser via fingeravtryck (en krånglig översättning av engelskans *website fingerprinting*) är en grupp metoder som syftar till att identifiera vilka sajter en användare besöker genom en krypterad tunnel (tänk VPN eller Tor). Ett vanligt scenario är att någon angripare avlyssnar länken mellan användarens dator och tunnelns ingångspunkt, fångar in den krypterade trafiken och listar ut vilken webbsida den motsvarar med hjälp av klassificeringsmodeller. Detta fungerar på grund av att trafiken, trots kryptering, innehåller vissa mönster som kännetecknar den underliggande webbsidan. Vissa åtgärder – så kallade försvar – går ut på att dessa mönster kan förändras och göras oidentifierbara genom att skicka fyllnadspaket (*padding packets*) som inte tillhör den riktiga datan som webbläsaren behöver för att visa upp webbsidan. De kallas fyllnadsbaserade försvar (*padding-only defenses*).
+
+Tor har implementerat ett ramverk för fyllnaden av kretsar (*circuit-padding framework*, beskrivet [här](https://torproject.gitlab.io/torspec/padding-spec.html){:target="_blank"}) i sin C-kod. Det använder icke-deterministiska ändliga tillståndsmaskiner för att representera fyllnadsbaserade försvar, där *event* beskriver händelser i anslutningen och *aktioner* resulterar i att fyllnadspaket skickas. Ramverket är dock begränsat vad gäller sitt stöd för olika försvar - inte ens vissa fyllnadsbaserade försvar kan implementeras - och [tidigare forskningsresultat]({% post_url 2022-11-07-padding-only-defenses %}) pekar på att det vore önskvärt att koda in funktioner som möjliggör blockering - avsiktlig artificiell fördröjning - för att bättre skydda mot trafikanalysis och stödja flera försvar. Ramverket [Maybenot]({% post_url 2023-11-26-maybenot-framework %}) har sitt ursprung i dessa idéer. Det är ett självständigt bibliotek skrivet i Rust som kan inkluderas i vilket program som helst och tillämpar en förbättrad modell som kan representera både fyllnads- och blockeringsbaserade försvar som probabilistiska ändliga tillståndsmaskiner.
+
+**Beskrivning:** I artikeln använder jag Maybenot för att evaluera potentialen av tillståndsmaskiner i allmänhet för att skydda mot identifiering av webbplatser via fingeravtryck. Projektet genomförs i kontexten av Tors pågående utveckling av Arti, en ny version av Tor skriven i Rust - som ska inkludera ett ramverk för skydd mot trafikanalys (kolla [här](https://gitlab.torproject.org/tpo/core/arti/-/issues/63){:target="_blank"}). Jag ger insikter kring de byggstenar som behövs för att konstruera ett ramverk som stödjer effektiva försvar samt diskuterar vissa designval och utmaningar som är viktiga att fundera över. Min slutsats är att flera tänkbara system bör utforskas innan en lösning väljas, därför att det är svårare - åtminstone byråkratiskt sett - att ersätta ett befintligt system än att implementera något framgångsrikt från första början. Jag rekommenderar också vissa förbättringar för Maybenot som nu är tillämpade i version 2.
+
+[Här hittar du artikeln](/assets/pdf/2023-thesis.pdf){:target="_blank"}

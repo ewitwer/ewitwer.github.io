@@ -1,0 +1,86 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: Entrada
+  category: Categoría
+  tag: Etiqueta
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: Inicio
+  about: Sobre mí
+  publications: Investigación
+  categories: Categorías
+  tags: Etiquetas
+
+# Categories and tags
+labels:
+  research: investigación
+  publications: Publicaciones
+  categories: Categorías
+  lang-en: lang-en
+  lang-es: lang-es
+  lang-sv: lang-sv
+
+# the text displayed in the search bar & search results
+search:
+  hint: buscar
+  cancel: Cancelar
+  no_results: No se encontraron resultados.
+
+panel:
+  lastmod: Actualizado recientemente
+  #trending_tags: Trending Tags
+  toc: Contenido
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: Esta entrada está licenciada bajo :LICENSE_NAME por el autor.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: Algunos derechos reservados.
+  verbose: >-
+    Salvo que se indique explícitamente, el contenido de este sitio web está licenciado
+    bajo la Creative Commons Attribution 4.0 International (CC BY 4.0) License por el autor.
+
+meta: ""
+
+not_found:
+  statement: La página que buscas no existe en este sitio web. Parece que quieres ver algo que no está aquí, si no es que yo haya publicado un enlace engañoso que no sirva!
+
+notification:
+  update_found: Hay una versión nueva de este contenido.
+  update: Actualizar
+
+# ----- Posts related labels -----
+
+post:
+  written_by: Por
+  posted: Publicado
+  updated: Actualizado
+  words: palabras
+  pageview_measure: visitas
+  read_time:
+    unit: min
+    prompt: " de lectura"
+  #relate_posts: Lecturas adicionales
+  share: Compartir
+  button:
+    #next: Nuevo
+    #previous: Anterior
+    copy_code:
+      succeed: ¡Copiado!
+    share_link:
+      title: Copiar enlace
+      succeed: ¡Enlace copiado!
+
+# categories page
+categories:
+  category_measure: categorias
+  post_measure: entradas
