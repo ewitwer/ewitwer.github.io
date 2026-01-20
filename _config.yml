@@ -27,6 +27,8 @@ title: Ethan Witwer # the main title
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://www.ethanwitwer.com"
 
+future: true
+
 github:
   username: ewitwer # change to your GitHub username
 
