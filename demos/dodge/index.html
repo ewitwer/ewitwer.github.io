@@ -157,9 +157,9 @@
                     <!-- Example 3 -->
                     <div class="p-3 p-md-4 rounded-4 border bg-body-secondary-subtle">
                         <p class="small text-body-secondary mb-3">
-                            In this example, a Dodge player is provided an extended manifest for the short animated film Sintel,
+                            In this example, a Dodge player is provided an extended manifest for the short animated film Elephants Dream,
 							which mimics the Big Buck Bunny extended manifest in the second example. Its sequence of cycles is
-							identical to Big Buck Bunny played at 2500k (disregarding differences in HTTP header sizes). Note that
+							identical to Big Buck Bunny played at 4000k (disregarding differences in HTTP header sizes). Note that
 							the video will not play to the end: we've limited the extended manifest to the same duration as Big
 							Buck Bunny. Another strategy is to download more cycles after all actual content - see the paper
 							for information on this!
@@ -170,7 +170,7 @@
 								<video id="videoPlayer3" controls></video>
 								<script>
 									(function () {
-										var url = "./sintel_480p_mimicry.exmfst.json";
+										var url = "./elephants_dream_mimicry.exmfst.json";
 										var player = dashjs.MediaPlayer().create();
 										player.initialize(document.querySelector("#videoPlayer3"), url, true);
 									})();
